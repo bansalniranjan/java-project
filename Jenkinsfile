@@ -11,7 +11,7 @@ pipeline {
     }
     post {
       always {
-        archive(/var/lib/jenkins/workspace/MyJavaProject/dist/rectangle.jar)
+        archiveArtifacts allowEmptyArchive: true, artifacts:'/var/lib/jenkins/workspace/MyJavaProject/dist/rectangle.jar'
       }
     }
   }
