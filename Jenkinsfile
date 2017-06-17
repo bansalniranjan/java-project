@@ -11,7 +11,7 @@ pipeline {
     }
     post {
       always {
-        archiveArtifacts artifacts: '/var/lib/jenkins/workspace/MyJavaProject/dist/rectangle.jar', fingerprint: true
+        archiveArtifacts '/var/lib/jenkins/workspace/MyJavaProject/dist/rectangle.jar'
       }
     }
   }
