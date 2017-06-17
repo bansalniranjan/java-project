@@ -11,7 +11,7 @@ pipeline {
     }
     post {
       always {
-        archiveArtifacts '/var/lib/jenkins/workspace/MyJavaProject/dist/rectangle.jar'
+        archive(/var/lib/jenkins/workspace/MyJavaProject/dist/rectangle.jar)
       }
     }
   }
