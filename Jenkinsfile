@@ -11,7 +11,7 @@ pipeline {
     }
     post {
       always {
-        archive '/var/lib/jenkins/workspace/My Java Project/dist/*.jar'
+        archiveArtifacts '/var/lib/jenkins/workspace/My Java Project/dist/*.jar'
 
       }
     }
